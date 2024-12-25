@@ -1,103 +1,117 @@
-import bola from "../assets/bola.jpeg";
-import Badminton from "../assets/Badminton.png";
-import Basketball from "../assets/Basketball.png";
+import hero2 from "../assets/hero2.jpg";
+import eko from "../assets/eko.jpg";
+import doni from "../assets/eko.jpg";
+import hafiz from "../assets/eko.jpg";
+import gatien from "../assets/eko.jpg";
+import adhi from "../assets/eko.jpg";
+import kayla from "../assets/eko.jpg";
+
 const AboutUs = () => {
   return (
     <section className="">
-      <div className="bg-primary2 px-14 py-14">
-        <h1 className="flex font-poppins justify-center text-4xl space-x-10">
-          GET CLOSER WITH
-          <span className="font-poppins font-bold text-4xl ml-2">
-            RHYTHMICS
-          </span>
-        </h1>
-      </div>
-      <img src={bola} alt="footer" className="w-full h-64 object-cover" />
+      <img src={hero2} alt="footer" className="w-full h-64 object-cover" />
       <div>
         <h1 className="text-center font-bold text-3xl mt-14 mb-14 font-poppins">
-          About Us
+          Get Closer with Rhythmics
         </h1>
         <p className="mr-32 ml-32 font-poppins mb-5">
-          FitSpace is your ultimate destination for discovering and booking the
-          finest sports venues around you. Whether you’re a seasoned athlete, a
-          casual sports enthusiast, or someone just beginning your fitness
-          journey, we are here to make your experience smoother, more
-          convenient, and enjoyable.
+          Rhythmics is the go-to platform for discovering and booking
+          exceptional music studios that match your creative needs. Whether
+          you’re a seasoned musician, an up-and-coming artist, or just starting
+          your musical journey, we make the process effortless so you can focus
+          on what matters most—your music.
         </p>
         <p className="mr-32 ml-32 font-poppins mb-5">
-          We believe that sports and physical activity are not just about
-          staying fit—they’re about fostering community, boosting mental health,
-          and building a healthier lifestyle. Our platform connects you with a
-          wide range of high-quality venues, from futsal courts and basketball
-          arenas to golf courses and swimming pools, ensuring you have
-          everything you need to pursue your passion for sports.
+          Music is more than just a craft; it’s a powerful way to express
+          yourself, connect with others, and push boundaries. That’s why we
+          bring together a diverse range of high-quality studios, from cozy
+          rehearsal spaces to professional recording environments, tailored to
+          fuel your creativity and vision.
         </p>
         <p className="mr-32 ml-32 font-poppins mb-5">
-          At FitSpace, we understand the challenges of finding the right place
-          to play or train, especially in today’s fast-paced world. That’s why
-          we’ve made it our mission to simplify the process. With just a few
-          clicks, you can explore, book, and secure your spot at top-rated
-          venues, saving you time and energy to focus on what truly matters—your
-          game.
+          We know how challenging it can be to find the right studio, especially
+          when inspiration strikes or deadlines loom. That’s why Rhythmics is
+          designed to make studio booking simple and fast. Browse our platform,
+          check real-time availability, and reserve your spot in moments—all
+          from the comfort of your device.
         </p>
         <p className="mr-32 ml-32 font-poppins mb-20">
-          Our commitment extends beyond convenience. We strive to support local
-          communities by partnering with trusted sports venues and providing a
-          reliable platform for athletes and enthusiasts alike. FitSpace is more
-          than just a booking service; it’s a hub for inspiration, motivation,
-          and connection. Join us and make FitSpace your trusted partner in
-          achieving your fitness goals. Whether it’s a competitive match or a
-          casual game with friends, we’re here to help you find the perfect
-          space to play, grow, and thrive.
+          With Rhythmics, you’re not just booking a studio—you’re stepping into
+          a community that values artistry, collaboration, and innovation.
+          Whether you’re rehearsing for a performance, producing a track, or
+          experimenting with new sounds, we’re here to help you find the perfect
+          environment to thrive. Let Rhythmics be your partner in turning dreams
+          into reality. The perfect studio is waiting—let’s make music together.
         </p>
       </div>
-      <section className="max-w-6xl mx-auto p-6">
-        <h1 className="text-3xl font-bold text-center mb-16">Our Promise</h1>
-        <div className="grid grid-cols-2  md:grid-cols-2 gap-2">
-          <img
-            src={Badminton}
-            alt=""
-            className="w-2/3 ml-36 rounded-lg object-cover"
-          />
-          <div className="flex items-center space-x-6">
-            <div className="mr-32">
-              <h1 className="text-2xl font-bold font-poppins mb-5">
-                Our Vision
-              </h1>
-              <p className="font-poppins">
-                To become the leading platform connecting sports enthusiasts
-                with top-tier sports venuefks, fostering a healthy and active
-                community across Indonesia.
-              </p>
-            </div>
+
+      <section className="max-w-5xl mx-auto p-6">
+        <div className="relative w-full overflow-hidden bg-gray-100 px-8 py-10">
+          <h1 className="text-3xl font-bold text-center font-poppins mb-8">
+            Meet the Rhythmics Team
+          </h1>
+          <div className="flex space-x-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide">
+            {[
+              {
+                name: "Eko Wahyu Setiawan",
+                role: "Founder & CEO",
+                img: eko,
+              },
+              {
+                name: "Rafhiromadoni Sopandi",
+                role: "Vice President",
+                img: doni,
+              },
+              {
+                name: "Hafiz Alkhairi Renal",
+                role: "Studio Manager",
+                img: hafiz,
+              },
+              {
+                name: "Gatien Naufal R",
+                role: "Marketing Head",
+                img: gatien,
+              },
+              {
+                name: "Adhi Suryo Nugroho S",
+                role: "Community Manager",
+                img: adhi,
+              },
+              {
+                name: "Kayla Amalika",
+                role: "Customer Support",
+                img: kayla,
+              },
+            ].map((member, index) => (
+              <div
+                key={index}
+                className="min-w-[200px] bg-white shadow-lg rounded-lg overflow-hidden snap-center"
+              >
+                <img
+                  src={member.img}
+                  alt={member.name}
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-5 text-center">
+                  <h3 className="text-xl font-bold font-poppins">
+                    {member.name}
+                  </h3>
+                  <p className="text-gray-600">{member.role}</p>
+                </div>
+              </div>
+            ))}
           </div>
-        </div>
-      </section>
-      <section className="max-w-6xl mx-auto p-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-          <div className="ml-36">
-            <h1 className="text-2xl font-bold font-poppins mb-5">Our Vision</h1>
-            <p class="font-poppins mb-4">
-              Provide easy access to a variety of sports venues.
-            </p>
-            <p class="font-poppins mb-4">
-              Deliver a fast and secure booking experience through cutting-edge
-              technology.
-            </p>
-            <p class="font-poppins">
-              Support the sports community with trusted information,
-              recommendations, and reviews.
-            </p>
-          </div>
-          <div className="flex items-center space-x-6">
-            <div>
-              <img
-                src={Basketball}
-                alt=""
-                className="w-2/3 ml-36 rounded-lg object-cover"
-              />
-            </div>
-          </div>
+          <style>
+            {`
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+      .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    `}
+          </style>
         </div>
       </section>
     </section>

@@ -11,18 +11,17 @@ const BookingSuccess = () => {
           BOOKING SUCCESSFULL
         </h1>
 
-        <div className="max-w-2xl mx-auto bg-[#738FFD] rounded-lg p-8 text-center text-white">
-        <div className="flex justify-center mb-6">
+        <div className="max-w-2xl mx-auto bg-[#AB886D] rounded-lg p-8 text-center text-white">
+          <div className="flex justify-center mb-6">
             <img src={SMS} alt="Success Icon" className="w-16 h-16" />
-        </div>
-          <h2 className="text-3xl font-bold mb-4">Lorem Ipsum</h2>
+          </div>
+          <h2 className="text-3xl font-bold mb-4">Thank You!</h2>
           <p className="text-sm leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec
-            odio enim. Nullam pellentesque mauris quis tristique sollicitudin.
-            Maecenas ac lacus eget mi condimentum pretium ac quis mi. Fusce
-            viverra a ante at tempor. Nam feugiat at enim scelerisque semper.
-            Phasellus sit amet finibus arcu. Phasellus sed ultricies libero, ac
-            iaculis purus. Phasellus.
+            Thank you for choosing Rhythmics to power your creativity. Your
+            studio booking has been confirmed, and everything is set for you to
+            dive into your musical journey. We’re excited to be a part of your
+            creative process and can’t wait to hear the magic you’ll create. Get
+            ready to bring your vision to life—your studio awaits!
           </p>
         </div>
       </main>
@@ -31,4 +30,3 @@ const BookingSuccess = () => {
 };
 
 export default BookingSuccess;
-

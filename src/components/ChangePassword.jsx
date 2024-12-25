@@ -97,18 +97,14 @@ const ChangePassword = () => {
         <div className="bg-white rounded-lg shadow-xl w-full sm:w-2/4 md:w-1/3 lg:w-1/2 xl:w-[60rem] h-[40rem] flex flex-wrap ml-36">
           <div className="w-full h-48 border-b-[1px] border-gray-900 border-opacity-35 shadow-lg p-6 flex items-center">
             {/* Profile Image */}
-            <img
-              src={Profile}
-              alt="Profile"
-              className="w-28 h-28 ml-16"
-            />
+            <img src={Profile} alt="Profile" className="w-28 h-28 ml-16" />
 
             {/* User Details */}
             <div className="ml-6 w-full">
-              <p className="text-xl text-black font-bold">
-                Bobby Junario
+              <p className="text-xl text-black font-bold">Bobby Junario</p>
+              <p className="text-sm text-gray-400 font-semibold mt-2">
+                Bobby123@gmail.com
               </p>
-              <p className="text-sm text-gray-400 font-semibold mt-2">Bobby123@gmail.com</p>
             </div>
           </div>
 
@@ -204,7 +200,7 @@ const ChangePassword = () => {
               <div className="flex justify-end">
                 <button
                   type="button"
-                  className="w-1/4 p-3 rounded-lg bg-[#E6FDA3] text-[#738ffd] font-semibold hover:bg-[#F2FA5A] transition"
+                  className="w-1/4 p-3 rounded-lg bg-primary2 text-[#738ffd] font-semibold hover:bg-[#F2FA5A] transition"
                   disabled={isUpdate}
                   onClick={handleSubmit}
                 >

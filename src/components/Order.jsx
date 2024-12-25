@@ -141,7 +141,7 @@ const Order = () => {
                   </div>
                   {/* Tombol Order Lagi */}
                   {activeTab === "dibatalkan" && (
-                    <button className="bg-lime-200 text-black py-1 px-3 rounded-lg">
+                    <button className="bg-[#B17457] text-white py-1 px-3 rounded-lg">
                       Order Lagi
                     </button>
                   )}

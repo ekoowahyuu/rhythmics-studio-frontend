@@ -9,7 +9,7 @@ const Navbar = () => {
         <a href="/home">
           <button className="font-poppins">Home</button>
         </a>
-        <a href="/venue">
+        <a href="/studio">
           <button className="font-poppins">Studio</button>
         </a>
         <a href="/about-us">
@@ -24,7 +24,7 @@ const Navbar = () => {
           <button className="font-poppins p-2"> Sign In</button>
         </a>
         <a href="/sign-up">
-          <button className="text-hitam font-poppins font-bold  rounded-lg px-3 py-2 hover:bg-secondaryK  bg-primary2">
+          <button className="text-hitam font-poppins font-bold  rounded-lg px-3 py-2 hover:bg-[#F5F5F5]  bg-primary2">
             Sign Up
           </button>
         </a>

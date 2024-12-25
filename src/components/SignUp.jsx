@@ -120,11 +120,7 @@ const SignUp = () => {
                 className="absolute right-3 top-1/2 transform -translate-y-1/2 cursor-pointer text-gray-600"
                 onClick={() => setShowPassword(!showPassword)}
               >
-                {showPassword ? (
-                  <Visibility/>
-                ) : (
-                  <VisibilityOff/>
-                )}
+                {showPassword ? <Visibility /> : <VisibilityOff />}
               </span>
               {passwordError && (
                 <div className="text-sm text-red-600">{passwordError}</div>
@@ -143,20 +139,18 @@ const SignUp = () => {
                 className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-600 hover:text-gray-800"
                 onClick={() => setShowConfirmPassword(!showConfirmPassword)}
               >
-                {showConfirmPassword ? (
-                  <Visibility/>
-                ) : (
-                  <VisibilityOff/>
-                )}
+                {showConfirmPassword ? <Visibility /> : <VisibilityOff />}
               </span>
               {confirmPasswordError && (
-                <div className="text-sm text-red-600">{confirmPasswordError}</div>
+                <div className="text-sm text-red-600">
+                  {confirmPasswordError}
+                </div>
               )}
             </div>
 
             <button
               type="submit"
-              className="w-full p-3 rounded-lg bg-[#738ffd] text-white hover:bg-blue-600 focus:ring-2 focus:ring-blue-500 mt-6"
+              className="w-full p-3 rounded-lg bg-[#AB886D] text-[#FFFFFF] text-[#FFFFFF] hover:bg-[#B17457] focus:ring-2 focus:ring-blue-500 mt-6"
               disabled={isSignUp}
             >
               {isSignUp ? "Signing Up..." : "SIGN UP"}
@@ -180,7 +174,7 @@ const SignUp = () => {
         </div>
 
         {/* Right Section */}
-        <div className="w-1/2 bg-[#738FFD] rounded-r-lg rounded-l-[75px] h-full flex flex-col justify-center items-center p-8 sm:p-44">
+        <div className="w-1/2 bg-[#AB886D] rounded-r-lg rounded-l-[75px] h-full flex flex-col justify-center items-center p-8 sm:p-44">
           <div className="flex flex-col justify-center items-center text-white">
             <h1 className="font-extrabold text-3xl sm:text-4xl text-center mb-4 sm:mb-5">
               Welcome Back!
@@ -189,8 +183,8 @@ const SignUp = () => {
               Enter your personal details to use all of site features
             </p>
             <Link
-              to="/sign-in" 
-              className="w-full p-3 bg-[#F5F5F5] hover:bg-white focus:ring-2 focus:ring-white text-[#738FFD] font-semibold rounded-lg text-center"
+              to="/sign-in"
+              className="w-full p-3 bg-[#FFFFFF] hover:bg-[#F5F5F5] focus:ring-2 focus:ring-white text-[#B17457] font-semibold rounded-lg text-center"
             >
               SIGN IN
             </Link>

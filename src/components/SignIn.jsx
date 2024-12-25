@@ -7,7 +7,7 @@ import VisibilityOff from "@mui/icons-material/VisibilityOff";
 const SignIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [showPassword, setShowPassword] = useState(false); 
+  const [showPassword, setShowPassword] = useState(false);
 
   const [emailError, setEmailError] = useState("");
   const [passwordError, setPasswordError] = useState("");
@@ -50,7 +50,7 @@ const SignIn = () => {
     <div className="flex justify-center items-center min-h-screen bg-gray-100">
       <div className="rounded-lg shadow-xl w-full sm:w-3/4 md:w-2/3 lg:w-1/2 xl:w-[85rem] h-[35rem] flex">
         {/* Left Section */}
-        <div className="w-1/2 bg-[#738FFD] rounded-l-lg rounded-r-[75px] h-full flex flex-col justify-center items-center p-8 sm:p-44">
+        <div className="w-1/2 bg-[#AB886D] rounded-l-lg rounded-r-[75px] h-full flex flex-col justify-center items-center p-8 sm:p-44">
           <div className="flex flex-col justify-center items-center text-white">
             <h1 className="font-extrabold text-3xl sm:text-4xl text-center mb-4 sm:mb-5">
               Hello, Friend!
@@ -61,8 +61,8 @@ const SignIn = () => {
             </p>
 
             <Link
-              to="/sign-up" 
-              className="w-full p-3 bg-[#F5F5F5] hover:bg-white focus:ring-2 focus:ring-white text-[#738FFD] font-semibold rounded-lg text-center"
+              to="/sign-up"
+              className="w-full p-3 bg-[#FFFFFF] hover:bg-[#F5F5F5] focus:ring-2 focus:ring-white text-[#B17457] font-semibold rounded-lg text-center"
             >
               SIGN UP
             </Link>
@@ -93,7 +93,7 @@ const SignIn = () => {
 
             <div className="relative">
               <input
-                type={showPassword ? "text" : "password"} 
+                type={showPassword ? "text" : "password"}
                 placeholder="Password"
                 className="w-full p-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 value={password}
@@ -107,17 +107,13 @@ const SignIn = () => {
                 onClick={() => setShowPassword(!showPassword)}
                 className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-600 hover:text-gray-800"
               >
-                {showPassword ? (
-                  <Visibility /> 
-                ) : (
-                  <VisibilityOff /> 
-                )}
+                {showPassword ? <Visibility /> : <VisibilityOff />}
               </button>
             </div>
 
             <div className="text-right">
               <Link
-                to="/forgot-password" 
+                to="/forgot-password"
                 className="text-black text-sm hover:underline"
               >
                 Forgot Password?
@@ -125,7 +121,7 @@ const SignIn = () => {
             </div>
             <button
               type="submit"
-              className="w-full p-3 rounded-lg bg-[#738ffd] text-white hover:bg-blue-600 focus:ring-2 focus:ring-blue-500 mt-6"
+              className="w-full p-3 rounded-lg bg-[#B17457] text-white hover:bg-[#AB886D] focus:ring-2 focus:ring-blue-500 mt-6"
               disabled={isSignIn}
             >
               {isSignIn ? "Signing In..." : "SIGN IN"}

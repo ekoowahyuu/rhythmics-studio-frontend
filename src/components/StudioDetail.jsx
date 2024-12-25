@@ -63,7 +63,7 @@ function ProgressBar({ value }) {
   );
 }
 
-export default function VenueDetail() {
+export default function StudioDetail() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Hero Section */}
@@ -87,8 +87,8 @@ export default function VenueDetail() {
                   key={tag}
                   className={`px-4 py-1 rounded-full text-sm ${
                     tag === "Galerry"
-                      ? "bg-[#738FFD] text-white"
-                      : "bg-[#E7FF8C] text-gray-800"
+                      ? "bg-[#AB886D] text-white"
+                      : "bg-[#FFFFFF] text-gray-800"
                   }`}
                 >
                   {tag}
@@ -130,13 +130,13 @@ export default function VenueDetail() {
               ))}
             </select>
           </div>
-          <button className="bg-[#E7FF8C] text-gray-800 hover:bg-[#d9ff66] p-2 rounded-lg">
+          <button className="bg-[#AB886D] text-gray-800  text-[#FFFFFF] hover:bg-[#B17457] p-2 rounded-lg">
             Book Now
           </button>
         </div>
 
         {/* Schedule Section */}
-        <div className="mb-12 p-6 bg-[#E6FDA3]">
+        <div className="mb-12 p-6 bg-primary2">
           <h3 className="text-lg font-semibold mb-4">
             Check Available Schedule
           </h3>
@@ -144,7 +144,7 @@ export default function VenueDetail() {
             <div className="min-w-[800px]">
               <div className="grid grid-cols-8 gap-2 mb-4">
                 <div className="font-medium">Time</div>
-                {/* Pemetaan hari dengan background bg-[#E6FDA3] */}
+                {/* Pemetaan hari dengan background bg-primary2 */}
                 {scheduleData.map((day) => (
                   <div
                     key={day.day}
@@ -246,7 +246,7 @@ export default function VenueDetail() {
             ))}
           </div>
 
-          <button className="w-full bg-[#E7FF8C] text-gray-800 hover:bg-[#d9ff66] p-2 rounded-lg">
+          <button className="w-full bg-[#AB886D] text-gray-800  text-[#FFFFFF] hover:bg-[#B17457] p-2 rounded-lg">
             Write a Review
           </button>
         </div>

@@ -71,7 +71,7 @@ const VerificationCode = () => {
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100">
-      <div className="bg-[#738FFD] rounded-lg shadow-xl w-full sm:w-3/4 md:w-2/3 lg:w-1/2 xl:w-[85rem] h-[35rem] flex">
+      <div className="bg-[#AB886D] rounded-lg shadow-xl w-full sm:w-3/4 md:w-2/3 lg:w-1/2 xl:w-[85rem] h-[35rem] flex">
         {/* Left Section */}
         <div className="w-1/2 h-full flex flex-col justify-center items-center text-white p-8 sm:p-16 lg:p-32">
           <h1 className="font-extrabold text-xl sm:text-3xl text-center mb-5">
@@ -96,26 +96,26 @@ const VerificationCode = () => {
                 onKeyDown={(e) =>
                   handleInputChange(index, e.target.value, e.nativeEvent)
                 }
-                className="w-12 h-12 sm:w-14 sm:h-14 text-center text-lg font-bold text-black bg-transparent border border-[#E6FDA3] rounded-2xl shadow focus:outline-none focus:ring-2 focus:ring-[#F2FA5A]"
+                className="w-12 h-12 sm:w-14 sm:h-14 text-center text-lg font-bold text-black bg-transparent border border-primary2 rounded-2xl shadow focus:outline-none focus:ring-2 focus:ring-[#FFFFFF]"
               />
             ))}
           </div>
 
           {errorMessage && (
-            <p className="text-[#E6FDA3] font-semibold text-sm mb-4">
+            <p className="text-primary2 font-semibold text-sm mb-4">
               {errorMessage}
             </p>
           )}
 
           {resendMessage && (
-            <p className="text-[#E6FDA3] font-semibold text-sm mb-4">
+            <p className="text-primary2 font-semibold text-sm mb-4">
               {resendMessage}
             </p>
           )}
 
           <button
             onClick={handleVerify}
-            className="w-60 p-3 rounded-lg bg-[#E6FDA3] text-[#738ffd] font-semibold hover:bg-[#F2FA5A] transition mt-6"
+            className="w-60 p-3 rounded-lg bg-primary2 text-[#AB886D] hover:text-[#FFFFFF] font-semibold hover:bg-[#B17457] transition mt-6"
           >
             Verify
           </button>
@@ -135,7 +135,7 @@ const VerificationCode = () => {
         </div>
 
         {/* Right Section */}
-        <div className="bg-[#cad7fdb3] rounded-2xl flex justify-center items-center w-1/3 h-3/4 mx-auto my-auto">
+        <div className="bg-[#B17457] rounded-2xl flex justify-center items-center w-1/3 h-3/4 mx-auto my-auto">
           <img
             src={VerifCode}
             alt="Verification Code"

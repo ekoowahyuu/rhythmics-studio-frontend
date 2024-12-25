@@ -4,7 +4,7 @@ import vvipImage from "../assets/vvip.jpg";
 import aboutImage from "../assets/about.png";
 
 const Homepage = () => {
-  const venues = [
+  const Studio = [
     { name: "REGULAR", image: regularImage },
     { name: "VIP", image: vipImage },
     { name: "VVIP", image: vvipImage },
@@ -27,7 +27,7 @@ const Homepage = () => {
             <button className="bg-white text-black px-6 py-2 rounded-md font-medium shadow-md hover:bg-gray-200">
               BOOK NOW
             </button>
-            <button className="bg-lime-500 text-black px-6 py-2 rounded-md font-medium shadow-md hover:bg-lime-400">
+            <button className="bg-[#B17457] text-white px-6 py-2 rounded-md font-medium shadow-md hover:bg-[#AB886D]">
               EXPLORE
             </button>
           </div>
@@ -42,7 +42,7 @@ const Homepage = () => {
           Your music deserves the best—find studios near you today.
         </p>
         <div className="bg-primary py-20 px-20 rounded-2xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14">
-          {venues.map((venue, index) => (
+          {Studio.map((venue, index) => (
             <div
               key={index}
               className="h-80 rounded-lg shadow-lg relative overflow-hidden"

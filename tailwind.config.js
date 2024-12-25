@@ -13,8 +13,8 @@ export default {
         "hero-pattern": "url('./src/assets/hero.jpg')",
       },
       colors: {
-        primary: "#608BC1",
-        primary2: "#E6FDA3",
+        primary: "#B17457",
+        primary2: "#FFFFFF",
         secondaryK: "#F2FA5A",
         hitam: "#333333",
         putih: "#F5F5F5",

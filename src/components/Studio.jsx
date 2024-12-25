@@ -1,10 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom"; // Changed to react-router-dom Link
-import hero1 from "../assets/hero1.png"; // Example image import
 import emerald from "../assets/emerald.jpg"; // Example image import
 import { ChevronDown, Star, Facebook, Instagram, Twitter } from "lucide-react";
 
-export default function SportVenues() {
+export default function SportStudio() {
   // State to manage dropdown visibility
   const [isFacilityOpen, setIsFacilityOpen] = useState(false);
   const [isRatingOpen, setIsRatingOpen] = useState(false);
@@ -22,27 +21,20 @@ export default function SportVenues() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Hero Section */}
-      <div className="bg-[#738FFD] text-white px-4 py-12 md:py-16 relative overflow-hidden">
+      <div className="bg-[#AB886D] text-white px-4 py-12 md:py-16 relative overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold mb-8">Our Studio</h1>
           <div className="flex gap-4 flex-wrap">
             <button className="bg-white text-black px-4 py-2 rounded-md">
               Bandung
             </button>
-            <button className="bg-[#E6FDA3] text-black px-4 py-2 rounded-md">
+            <button className="bg-primary2 text-black px-4 py-2 rounded-md">
               Jakarta
             </button>
-            <button className="bg-[#E6FDA3] text-black px-4 py-2 rounded-md">
+            <button className="bg-primary2 text-black px-4 py-2 rounded-md">
               Bali
             </button>
           </div>
-        </div>
-        <div className="absolute right-0 top-0 h-full w-1/3">
-          <img
-            src={hero1} // Use imported image
-            alt="Sports illustration"
-            className="absolute top-0 right-0 w-[363px] h-[325px] object-contain"
-          />
         </div>
       </div>
 
@@ -53,7 +45,7 @@ export default function SportVenues() {
           <div className="relative">
             <button
               onClick={() => setIsFacilityOpen(!isFacilityOpen)}
-              className="bg-[#E6FDA3] px-4 py-2 rounded-md flex items-center gap-2"
+              className="bg-primary2 px-4 py-2 rounded-md flex items-center gap-2"
             >
               Type
               <ChevronDown size={20} />
@@ -83,7 +75,7 @@ export default function SportVenues() {
           <div className="relative">
             <button
               onClick={() => setIsRatingOpen(!isRatingOpen)}
-              className="bg-[#E6FDA3] px-4 py-2 rounded-md flex items-center gap-2"
+              className="bg-primary2 px-4 py-2 rounded-md flex items-center gap-2"
             >
               Rating
               <ChevronDown size={20} />
@@ -113,7 +105,7 @@ export default function SportVenues() {
           <div className="relative">
             <button
               onClick={() => setIsPriceOpen(!isPriceOpen)}
-              className="bg-[#E6FDA3] px-4 py-2 rounded-md flex items-center gap-2"
+              className="bg-primary2 px-4 py-2 rounded-md flex items-center gap-2"
             >
               {selectedPrice || "Price"}
               <ChevronDown size={20} />
@@ -237,7 +229,7 @@ export default function SportVenues() {
         {[1, 2, 3, 4, 5].map((num) => (
           <button
             key={num}
-            className="w-8 h-8 rounded-full bg-[#6B7FFF] text-white flex items-center justify-center"
+            className="w-8 h-8 rounded-full bg-[#AB886D] text-white flex items-center justify-center"
           >
             {num}
           </button>

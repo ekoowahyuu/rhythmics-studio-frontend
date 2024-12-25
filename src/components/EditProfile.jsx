@@ -98,7 +98,7 @@ const EditProfile = () => {
             <p className="text-start text-gray-400 font-medium ml-[6rem]">
               Your Profile
             </p>
-            <img src={Profile} alt="Profile" className="w-28 h-28 mt-3 ml-20"/>
+            <img src={Profile} alt="Profile" className="w-28 h-28 mt-3 ml-20" />
           </div>
 
           <div className="w-full border text-center h-[calc(100%-12rem)] flex justify-center item ">
@@ -165,7 +165,7 @@ const EditProfile = () => {
               <div className="w-full flex justify-end mb-20 mr-8">
                 <button
                   type="button"
-                  className="w-60 p-3 rounded-lg bg-[#E6FDA3] text-[#738ffd] font-semibold hover:bg-[#F2FA5A] transition"
+                  className="w-60 p-3 rounded-lg bg-primary2 text-[#738ffd] font-semibold hover:bg-[#F2FA5A] transition"
                   disabled={isUpdate}
                   onClick={handleSubmit}
                 >

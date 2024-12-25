@@ -20,7 +20,7 @@ const Review = () => {
         />
         <button
           type="submit"
-          className="bg-blue-500 text-white py-2 rounded hover:bg-blue-600"
+          className="bg-[#B17457] text-white py-2 rounded hover:bg-[#AB886D]"
         >
           Submit Review
         </button>

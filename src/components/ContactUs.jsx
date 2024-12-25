@@ -23,11 +23,12 @@ const ContactUs = () => {
                 placeholder="Description"
                 className="w-full border border-gray-300 rounded-3xl p-3 focus:outline-primary focus:ring-primary mb-6 font-poppins"
               />
-              <input
-                type="Submit"
-                placeholder="Submit"
-                className="w-full border text-putih bg-primary border-gray-300 rounded-3xl p-3 focus:outline-primary focus:ring-primary font-poppins"
-              />
+              <button
+                type="submit"
+                className="w-full border text-putih bg-[#B17457] hover:bg-[#AB886D] border-gray-300 rounded-3xl p-3 focus:outline-primary focus:ring-primary font-poppins"
+              >
+                Submit
+              </button>
             </form>
           </div>
           <div className="w-1/2 bg-primary text-white flex flex-col justify-center rounded-r-lg p-10">
