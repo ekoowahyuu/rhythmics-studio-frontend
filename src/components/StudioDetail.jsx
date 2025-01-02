@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Star } from "lucide-react"; // Assuming lucide-react is needed for stars
 import emerald from "../assets/emerald.jpg"; // Example image import
-import locationmap from "../assets/locationmap.png"; // Example location map image import
+import locationmap from "../assets/locationmap.jpg"; // Example location map image import
 import avatar1 from "../assets/avatar1.png"; // Example avatar image import
 import avatar2 from "../assets/avatar2.png"; // Import avatar2
 
